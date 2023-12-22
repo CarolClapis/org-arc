@@ -11,10 +11,10 @@ main:
 
     call Imprimestr
 
-    loadn r0, #40   ; Posicao da nave na tela
-	loadn r1, #'@'	    ; Char da Nave
-	loadn r2, #32	    ; Char espaço em branco
-    loadn r5, #1199     ; Fim da tela
+    loadn r0, #40  
+	loadn r1, #'@'	   
+	loadn r2, #32	    
+    loadn r5, #1199   
 
 
 Loop:
@@ -28,13 +28,13 @@ Loop:
 
 
 Imprimestr:
-	push r0	; protege o r0 na pilha para preservar seu valor
-	push r1	; protege o r1 na pilha para preservar seu valor
-	push r2	; protege o r1 na pilha para preservar seu valor
-	push r3	; protege o r3 na pilha para ser usado na subrotina
-	push r4	; protege o r4 na pilha para ser usado na subrotina
+	push r0	
+	push r1	
+	push r2
+	push r3	
+	push r4
 
-	loadn r3, #'\0'	; Criterio de parada
+	loadn r3, #'\0'	
 
 ImprimestrLoop:
 	loadi r4, r1
@@ -47,7 +47,7 @@ ImprimestrLoop:
 	jmp ImprimestrLoop
 
 ImprimestrSai:
-	pop r4	; Resgata os valores dos registradores utilizados na Subrotina da Pilha
+	pop r4	
 	pop r3
 	pop r2
 	pop r1
@@ -65,7 +65,7 @@ RecalculaPos:
     rts
 
 ImprimeObj:
-    outchar r1, r0  ; r0-> Posicao  r1-> "O"
+    outchar r1, r0  
     rts
 
 Delay:
