@@ -1,1 +1,2 @@
-# organização e arquiteura de computadores
+# Disciplina SSC0902 Organização e Arquitetura de Computadores
+Para as aulas e informações da Disciplina SSC0902 Organização e Arquitetura de Computadores, usar a página da Disciplina em: https://gitlab.com/simoesusp/disciplinas/-/tree/master/SSC0902-ENG_COMP_Organizacao-e-Arquitetura-de-Computadores
